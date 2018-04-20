@@ -10,6 +10,7 @@ public class JavaFeatures {
 	// package friendship
 
 	public static void main(String[] args) {
+		//Unified JVM logging
 		long pid = ProcessHandle.current().pid();
 		System.out.println("Pid=" + pid);
 		overLoadedOf();
@@ -20,6 +21,20 @@ public class JavaFeatures {
 	private void notes() {
 		// complie using --release to make backward compatible rather than -source and -target
 		// java --list -modules // to find all JDK9 modules
+	
+		/*
+		 * jshell – for testing
+		 * Read evaluate Print loop (REPL) interactive tool for  testing java statements  etc – no need to package
+		 * https://bugs.openjdk.java.net/browse/JDK-8043364 
+		 */
+	
+		/*
+		 * jLink
+		 * Tool that can assemble and optimize a set of modules and their dependencies into a custom run-time image
+		 * http://openjdk.java.net/jeps/282
+		 */
+	
+
 	}
 
 	
